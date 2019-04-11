@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Point;
 
 public class Oval extends Shape
@@ -24,6 +25,10 @@ public class Oval extends Shape
 	public int getDiameter2()
 	{
 		return diameter2;
+	}
+	public void draw(Graphics graphic)
+	{
+		
 	}
 
 }

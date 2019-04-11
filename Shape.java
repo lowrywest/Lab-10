@@ -1,9 +1,11 @@
 import java.awt.Color;
 import java.awt.Point;
+import java.awt.Graphics;
 
-public class Shape 
+
+public abstract class Shape implements Drawable
 {
-	private Point[] location;
+	protected Point[] location;
 	private Color color;
 	private boolean filled;
 	
