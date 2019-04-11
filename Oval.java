@@ -1,5 +1,7 @@
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Point;
 
 public class Oval extends Shape
@@ -26,8 +28,11 @@ public class Oval extends Shape
 	{
 		return diameter2;
 	}
-	public void draw(Graphics graphic)
+	public void draw(Graphics graphics)
 	{
+		Graphics2D g2d = (Graphics2D) graphics;
+		g2d.setColor(this.getColor());
+		g2d.setStroke(new BasicStroke(5));
 		
 	}
 

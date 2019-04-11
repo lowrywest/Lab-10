@@ -10,15 +10,17 @@ import java.awt.Point;
 
 public class RightTriangle extends Triangle
 {
-	private int base;
-	private int height;
-
 	public RightTriangle(Point pointLB, int base, int height,Color color, boolean filled) 
 	{
 		super(pointLB, color, filled);
-		this.base=base;
-		this.height=height;
+		location= new Point[3];
+		int originalX=(int)pointLB.getX();
+		int originalY=(int)pointLB.getY();
+		location[0]= pointLB;
+		location[1]= new Point(originalX,originalY+height);
+		location[2]= new Point(originalX+base,originalY);
 		// TODO Auto-generated constructor stub
 	}
 
 }
+
