@@ -17,7 +17,8 @@ public class Oval extends Shape
 		super(color,filled);
 		diameter1=d1;
 		diameter2=d2;
-		
+		location= new Point[1];
+		location[0]=pointUL;
 	}
 	
 	public int getDiameter1()
@@ -30,10 +31,7 @@ public class Oval extends Shape
 	}
 	public void draw(Graphics graphics)
 	{
-		Graphics2D g2d = (Graphics2D) graphics;
-		g2d.setColor(this.getColor());
-		g2d.setStroke(new BasicStroke(5));
-		
+		graphics.setColor(getColor());
 	}
 
 }
