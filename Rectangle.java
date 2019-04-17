@@ -11,13 +11,16 @@ public class Rectangle extends Polygon
 
 	public Rectangle(Point pointUL, int width,int height,Color color,boolean filled)
 	{
+		/*
+		 * Super Constructor that passes in the color and if it is filled or not
+		 */
 		super(color, filled);
 		location= new Point[4];
-		int originalX=(int)pointUL.getX();
-		int originalY=(int)pointUL.getY();
+		int originalX=pointUL.x;
+		int originalY=pointUL.y;
 		location[0]=pointUL;
-		location[1]=new Point(originalX, originalY+height);
-		location[2]=new Point(originalX+width, originalY);
+		location[2]=new Point(originalX, originalY+height);
+		location[1]=new Point(originalX+width, originalY);
 		location[3]=new Point(originalX+width, originalY+height);
 		// TODO Auto-generated constructor stub
 	}

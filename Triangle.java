@@ -21,10 +21,12 @@ public abstract class Triangle extends Polygon
 	 */
 	public Triangle(Point pointLB, Color color, boolean filled) 
 	{
+		/*
+		 * Super Constructor that passes in the color and if it is filled or not
+		 */
 		super(color, filled);
         
         location = new Point[3];
-        
         // Define lower base point
         location[0] = pointLB; // lower base point
 	}
