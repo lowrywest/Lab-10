@@ -79,7 +79,6 @@ public class DrawPanel extends JPanel
 		shapeList.get(12).draw(graphics);
 		shapeList.get(13).draw(graphics);
 		shapeList.get(14).draw(graphics);
-		shapeList.get(15).draw(graphics);
 		
 	}
 }
